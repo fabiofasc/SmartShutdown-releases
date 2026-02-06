@@ -26,6 +26,20 @@ Scarica l'ultima versione dalla sezione [**Releases**](https://github.com/fabiof
 
 > L'app richieder&agrave; automaticamente i privilegi di amministratore (necessari per leggere i sensori hardware).
 
+### Avviso Windows Defender
+
+Windows Defender potrebbe segnalare l'eseguibile come minaccia. Si tratta di un **falso positivo** causato dalla libreria [LibreHardwareMonitorLib](https://github.com/LibreHardwareMonitor/LibreHardwareMonitor) che utilizza un driver kernel (`WinRing0`) per accedere ai sensori hardware. Questo comportamento &egrave; comune a tutti i software di monitoraggio hardware (HWiNFO, Open Hardware Monitor, ecc.).
+
+Per risolvere:
+1. In **Sicurezza di Windows** &rarr; **Protezione da virus e minacce** &rarr; **Cronologia protezione**
+2. Trovare la minaccia segnalata e selezionare **Consenti nel dispositivo**
+
+Oppure aggiungere un'esclusione:
+1. **Sicurezza di Windows** &rarr; **Protezione da virus e minacce** &rarr; **Impostazioni** &rarr; **Gestisci impostazioni**
+2. Scorrere fino a **Esclusioni** &rarr; **Aggiungi esclusione** &rarr; selezionare la cartella di SmartShutdown
+
+Il codice sorgente &egrave; open source e verificabile.
+
 ## Screenshot
 
 L'interfaccia mostra in tempo reale:

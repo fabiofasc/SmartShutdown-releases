@@ -42,10 +42,7 @@ Il codice sorgente &egrave; open source e verificabile.
 
 ## Screenshot
 
-L'interfaccia mostra in tempo reale:
-- Temperature CPU, GPU e MAX
-- Log delle operazioni
-- Pulsanti per le diverse modalit&agrave;
+![Smart Shutdown](SS_preview.png)
 
 ## Hardware Supportato
 
